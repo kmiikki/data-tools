@@ -1,0 +1,67 @@
+# ----------------------------------------------------------------------
+# Git ignore rules for data-tools repository
+# Keep examples (.png, .csv) but ignore caches, logs, and temp files.
+# ----------------------------------------------------------------------
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.env/
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Jupyter & Spyder
+.ipynb_checkpoints/
+.spyderproject
+.spyproject
+.history/
+.workspace/
+
+# Pytest and coverage
+.pytest_cache/
+.coverage
+htmlcov/
+.cache/
+
+# Build and packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# System files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporary files and editor backups
+*~
+*.bak
+*.swp
+*.tmp
+*.log
+
+# Exclude data you explicitly mark as temporary
+# (optional pattern, can be uncommented)
+# *_temp.*
+# temp_*/
+
+# ----------------------------------------------------------------------
+# Explicitly keep result files and documentation
+# ----------------------------------------------------------------------
+!*.csv
+!*.png
+!*.jpg
+!*.jpeg
+!*.md
+!*.pdf
+!*.txt
+!*.json
+!*.yaml
