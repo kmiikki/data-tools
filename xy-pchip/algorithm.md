@@ -27,7 +27,7 @@ Rows containing `NaN` in either column are dropped.
 The data are sorted by ascending x:
 
 $$
-(x, y) \leftarrow \mathrm{sort_by_x}(x, y)
+(x, y) \leftarrow \mathrm{sort_{by\_x}}(x, y)
 $$
 
 ### 2.3 Duplicate collapsing
