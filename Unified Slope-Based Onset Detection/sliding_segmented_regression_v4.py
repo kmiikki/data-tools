@@ -25,8 +25,8 @@ import os
 
 def resolve_paths(infile_name, outfig_name):
     """
-    Pi logiikka: jos ollaan /opt/tools, data oletetaan ~/rgb/analysis/
-    Desktop/analysis: käytä suhteellisia polkuja.
+    Pi logic: if running in /opt/tools, data is assumed to be located in ~/rgb/analysis/.
+    If running from Desktop/analysis, use relative paths.
     """
     if os.getcwd() == "/opt/tools":
         infile = os.path.expanduser("~/rgb/analysis/" + infile_name)
